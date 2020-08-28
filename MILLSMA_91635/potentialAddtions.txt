@@ -1,0 +1,43 @@
+DESIGN
+
+- centre tiles one screen resize
+- footer space on left side at larger screen
+- make buttons not ugly
+- show filters button overlap - potentially move to heading
+- padding of content on body pages'
+- potentially add 'show filters' button header, would then have to close header on each page. 
+
+QUERIES
+- addtional queries for course and standard information
+	- internal/external
+	- lit/num
+	- eotc
+	- course costs
+-calculation of differant credit types (lit, num, vocational pathways etc.)
+- could adjust search query to show course code and also partial search (searching 'Maori' would show Maori even if it's nto the start of the course ('Te Reo Maori'))
+
+PAGES
+- editing of information
+- potential login and edit feature, can edit from backend
+
+FUNCTIONALITY
+- footer includes
+- hamburger dropdown fixed position - COMPLETED
+
+CONTENT
+- vocational pathways addition
+- Juniour Courses (would also then be prereqs for 11courses)
+
+
+DISPLAY TYPES AND HEADINGS:
+select all standard nformation from db. sort by type desecnding - internal will come first. 
+set varaibles internal and external counts to false
+while there are results from query...
+if internal count = 0 and sort type is i
+print internal heading
+set internal count to true
+else if external count = 0 and sort type is e
+print external heading
+set external count to true
+---
+print exam information
